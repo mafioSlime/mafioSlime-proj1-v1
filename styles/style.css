@@ -25,7 +25,7 @@ img {
 }
 
 .hero-banner-container {
-  height: 100vh;
+  height: 85vh;
   background-color: rgba(0, 0, 0, 0.5);
   position: relative;
   margin-bottom: 2rem;
@@ -35,7 +35,7 @@ img {
 .hero-banner-container:before {
   content: '';
   width: 100%;
-  height: 100vh;
+  height: 85vh;
   position: absolute;
   background-image: url("../images/hero-banner.jpg");
   background-position: center;
@@ -267,8 +267,7 @@ img {
   max-width: 1400px;
   margin: auto;
   text-align: center;
-  padding-top: 5rem;
-  padding-bottom: 3rem;
+  padding: 5rem 1rem 3rem;
 }
 
 .park-intro-container h3 {
@@ -294,6 +293,28 @@ img {
 
 .park-content2 img {
   margin-bottom: 0;
+  cursor: pointer;
+}
+
+#showcaseImage {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  max-width: 400px;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+}
+
+#showcaseImage.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (min-width: 600px) {
