@@ -1,0 +1,344 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #fafafa;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+li {
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.hero-banner-container {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
+  margin-bottom: 2rem;
+  color: #fafafa;
+}
+
+.hero-banner-container:before {
+  content: '';
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background-image: url("../images/hero-banner.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.hero-banner-container a {
+  color: #fff;
+}
+
+.main-nav-container {
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.nav-links-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-links-container a {
+  display: inline-block;
+  font-size: 1.5rem;
+}
+
+.nav-links-container a:hover {
+  color: #f5c231;
+}
+
+.hero-banner-content-container {
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.hero-banner-content-container h1 {
+  font-size: 4.5rem;
+  letter-spacing: 1.5px;
+  font-weight: lighter;
+}
+
+.hero-banner-content-container p {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero-banner-content-container a {
+  font-size: 1.5rem;
+  padding: 0.2rem;
+  border: 1px solid #cd950c;
+  border-radius: 5px;
+}
+
+.hero-banner-content-container a:hover {
+  opacity: 0.8;
+}
+
+.main-content-container {
+  max-width: 1400px;
+  margin: auto;
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 5rem;
+}
+
+.content-card {
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 1.5rem;
+}
+
+.content-card img {
+  width: 100%;
+}
+
+.content-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.2rem;
+  font-weight: lighter;
+}
+
+.content-card p {
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+}
+
+.content-card a {
+  font-size: 1.3rem;
+  padding: 0.3rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+  background-color: #f5c231;
+  border-radius: 5px;
+  color: #444;
+}
+
+.content-card a:hover {
+  opacity: 0.9;
+}
+
+.option-container {
+  text-align: center;
+  max-width: 1400px;
+  margin: 3.5rem auto;
+}
+
+.option-container .option-card {
+  margin-bottom: 3rem;
+}
+
+.option-container .option-card i {
+  margin-bottom: 1rem;
+}
+
+.option-container .option-card h3 {
+  letter-spacing: 3px;
+}
+
+.option-card:first-child i {
+  color: #0a67bf;
+}
+
+.option-card:nth-child(2) i {
+  color: #f05053;
+}
+
+.option-card:nth-child(3) i {
+  color: #1e7e74;
+}
+
+.travel-container {
+  height: 60vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
+  color: #fafafa;
+}
+
+.travel-container:before {
+  content: '';
+  width: 100%;
+  height: 60vh;
+  position: absolute;
+  background-image: url("../images/plan banner.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.travel-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 50vh;
+  text-align: center;
+  padding-top: 8rem;
+}
+
+.travel-content .tc-content1 {
+  padding: 3rem;
+  margin-bottom: 3rem;
+}
+
+.travel-content .tc-content1 h3 {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 2px;
+  background-color: rgba(245, 194, 49, 0.5);
+  padding: 0.3rem;
+  display: inline-block;
+}
+
+.travel-content .tc-content1 p {
+  font-size: 1.3rem;
+}
+
+.travel-content .tc-content2 {
+  max-width: 900px;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 4rem;
+}
+
+.travel-content .tc-content2 a {
+  color: #fafafa;
+  display: block;
+  font-size: 1.2rem;
+}
+
+.travel-content .tc-content2 a:hover {
+  color: #f5c231;
+}
+
+.travel-content .tc-content2 i {
+  margin-bottom: 1rem;
+}
+
+.park-intro-container {
+  max-width: 1400px;
+  margin: auto;
+  text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+}
+
+.park-intro-container h3 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: lighter;
+}
+
+.park-intro-container p {
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+.park-content2 {
+  padding: 1rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.park-content2 img {
+  margin-bottom: 0;
+}
+
+@media (min-width: 600px) {
+  .option-container {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 0.5rem;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (min-width: 758px) {
+  .main-content-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+  }
+}
+
+@media (min-width: 950px) {
+  .hero-banner-container h1 {
+    font-size: 6.5rem;
+  }
+  .hero-banner-container p {
+    font-size: 2rem;
+  }
+  .main-content-container {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  .park-intro-container {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-grid-columns: 1fr 2fr;
+        grid-template-columns: 1fr 2fr;
+    grid-gap: 2rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
