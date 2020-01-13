@@ -23,6 +23,10 @@ img {
     margin-bottom: 1rem;
 }
 
+.lazy {
+    background-image: none;
+}
+
 // .card {
 //     padding: 1rem;
 // }
@@ -53,9 +57,19 @@ img {
  
 }
 
+
 .main-nav-container {
     padding: 1rem;
     background-color: rgba(0,0,0,0.4);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.nav-logo-container {
+    h3 {
+        font-size: 40px;
+        font-weight: lighter;
+    }
 }
 
 .nav-links-container {
@@ -67,6 +81,7 @@ img {
         font-size: 1.5rem;
         &:hover {
             color: #f5c231;
+            
         }
     }
 }
@@ -81,18 +96,30 @@ img {
             font-size: 4.5rem;
             letter-spacing: 1.5px;
             font-weight: lighter;
+            animation-name: fromLeft;
+            animation-duration: 2s;
+            transition-timing-function: ease-in;
         }
         p {
             font-size: 2rem;
             margin-bottom: 1.5rem;
+            animation-name: fromRight;
+            animation-duration: 2s;
+            transition-timing-function: ease-in;
         }
         a {
             font-size: 1.5rem;
             padding: 0.2rem;
             border: 1px solid #cd950c;
             border-radius: 5px;
+            animation-name: fromBottom;
+            animation-duration: 2s;
+            transition-timing-function: ease-in;
+            display: inline-block;
             &:hover {
                 opacity: 0.8;
+                transform: translateY(-5px);       
+
             }
       
             
@@ -313,6 +340,14 @@ img {
         grid-template-columns: repeat(3, 1fr);
         align-items: center;
     }
+
+  
+}
+
+@media(max-width: 600px) {
+    .nav-links-container {
+        display: none;
+    }
 }
 
 
@@ -349,6 +384,55 @@ img {
 }
 
 
+@keyframes fromBottom {
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+}
+
+
+@keyframes fromLeft {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+
+
+    100% {
+        transform: translateX(0)
+    }
+
+
+
+}
+
+
+
+@keyframes fromRight {
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+
+
+}
 
 // @keyframes bounce {
 //     20% {
